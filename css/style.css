@@ -1,0 +1,308 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   * https://twitter.com/miketaylr/status/12228805301
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined:
+   * https://stackoverflow.com/a/16982510/7133471
+   *
+   * Customize the background color to match your design.
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   * https://github.com/h5bp/html5-boilerplate/issues/440
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rme;
+    line-height: 2;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}   
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #353535;
+    padding-top: 0.5rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: url(../img/mesero_hamburguesa.png);
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.social-media {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.social-media a {
+    color: white;
+    font-size: 2.2rem;
+    margin-right: 2rem;
+}
+
+.social-media a:last-child {
+    margin-right: 0;
+}
+
+.header-content h1 {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 11%;
+}
+
+.header-content {
+    padding-top: 0;
+}
+
+.site-name {
+    color: white;
+    -webkit-text-stroke: 2px #F5CA2B;
+    font-size: 5.9rem;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+.site-name span {
+    font-weight: bold;
+    font-size: 10rem;
+}
+
+.bar {
+    background-color: #353535;
+    padding: 1rem 1rem;
+}
+
+.logo img {
+    width: 80%;
+}
+.logo {
+    width: 33%;
+    float: left;
+    padding-top: 1rem;
+}
+
+.principal-navigation a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 1rem;
+    padding: 1rem 1rem;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.principal-navigation a:hover {
+    background-color: #F5CA2B;
+}
+
+.principal-navigation a:last-child {
+    border: 2px solid #F5CA2B;
+    color: #F5CA2B;
+    margin-right: 0;
+}
+
+.principal-navigation a:last-child:hover {
+    color: white;
+}
+
+.principal-navigation {
+    width: 67%;
+    float: right;
+    text-align: right;
+    display: block;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.list-dishes li {
+    padding: 1rem;
+    float: left;
+    width: 33.3%;
+}
+
+.dish {
+    position: relative;
+    overflow: hidden; /*Si algo se sale no se muestra*/
+}
+
+.dish p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem 1rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    color: #F5CA2B;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.dish:hover p {
+    bottom: -8rem;
+    opacity: 0;
+}
+
+.site-footer {
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
