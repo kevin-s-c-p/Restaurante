@@ -156,6 +156,10 @@ footer {
     text-align: center;
 }
 
+.center-content {
+    max-width: 80rem;
+}
+
 .no-margin {
     margin: 0;
 }
@@ -189,18 +193,15 @@ footer {
     margin-right: 0;
 }
 
-.header-content h1 {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 11%;
-}
-
-.header-content {
-    padding-top: 0;
-}
-
 .site-name {
+    color: white;
+    -webkit-text-stroke: 2px #F5CA2B;
+    font-size: 5.9rem;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+.slogan {
     color: white;
     -webkit-text-stroke: 2px #F5CA2B;
     font-size: 5.9rem;
@@ -225,6 +226,11 @@ footer {
     width: 33%;
     float: left;
     padding-top: 1rem;
+}
+
+.logo:hover {
+    background-color: #F5CA2B;
+    transition: all 0.4s ease;
 }
 
 .principal-navigation a {
@@ -305,4 +311,70 @@ footer {
     color: white;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+}
+
+/* ESTO ES CSS DE LAS RESERVAS */
+
+.background-image {
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url(../img/reservas_comida.jpg);
+    height: 82.5vh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-content h1 {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 11%;
+}
+
+.header-content {
+    padding-top: 0;
+}
+
+legend {
+    font-size: 2rem;
+    color: #353535;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+textarea {
+    height: 20rem;
+}
+
+input:not([type="submit"]),
+textarea {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    border: none;
+    background-color: #353535;
+    color: white;
+}
+
+.button:hover {
+    background-color: #F5CA2B;
+    color: #353535;
+    transition: all 0.3s ease;
 }
