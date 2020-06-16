@@ -132,6 +132,7 @@ h2 {
 
 h3 {
     font-size: 3.2rem;
+    margin: 0;
 }
 h4 {
     font-size: 2.8rem;
@@ -377,4 +378,42 @@ textarea {
     background-color: #F5CA2B;
     color: #353535;
     transition: all 0.3s ease;
+}
+
+/* AQUÍ VA LO DE NOSOTROS */
+
+.content-about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.image {
+    max-width: 97%;
+}
+
+.about-us-text blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.about-us-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    text-align: center;
+    flex-basis: calc(33.3%rem - 1rem);
+    padding: 0 1rem;
+}
+
+.icon i {
+    font-size: 10rem;
+    color: #F5CA2B;
+}
+
+.icon h3 {
+    text-transform: uppercase;
 }
