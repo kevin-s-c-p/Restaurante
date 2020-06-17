@@ -250,11 +250,11 @@ footer {
     background-color: #F5CA2B;
 }
 
-.principal-navigation a:last-child {
+/*.principal-navigation a:last-child {
     border: 2px solid #F5CA2B;
     color: #F5CA2B;
     margin-right: 0;
-}
+}*/
 
 .principal-navigation a:last-child:hover {
     color: white;
