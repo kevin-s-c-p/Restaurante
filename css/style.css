@@ -240,21 +240,24 @@ footer {
     font-size: 2rem;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     padding: 1rem 1rem;
     display: inline-block;
     transition: all 0.4s ease;
+}
+.principal-navigation a:last-child{
+    margin-right: 0;
 }
 
 .principal-navigation a:hover {
     background-color: #F5CA2B;
 }
 
-/*.principal-navigation a:last-child {
+.principal-navigation a:last-child {
     border: 2px solid #F5CA2B;
     color: #F5CA2B;
     margin-right: 0;
-}*/
+}
 
 .principal-navigation a:last-child:hover {
     color: white;
