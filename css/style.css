@@ -229,11 +229,6 @@ footer {
     padding-top: 1rem;
 }
 
-.logo:hover {
-    background-color: #F5CA2B;
-    transition: all 0.4s ease;
-}
-
 .principal-navigation a {
     font-family: 'Oswald', sans-serif;
     color: white;
