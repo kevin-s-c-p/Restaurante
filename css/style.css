@@ -271,7 +271,7 @@ footer {
 }
 
 .section {
-    padding: 3rem 0;
+    padding: 0;
 }
 
 .section p {
@@ -441,6 +441,10 @@ textarea,select:not([type=submit]) {
 
 /* Aquí va ordenar */
 
+.order-content {
+    padding-bottom: 3rem;
+}
+
 .list-order li {
     padding: 1rem;
     float: left;
@@ -454,6 +458,8 @@ textarea,select:not([type=submit]) {
 }
 
 .each-dish img {
+    width: 450px;
+    height: 300px;
     max-width: 450px;
     max-height: 300px;
 }
