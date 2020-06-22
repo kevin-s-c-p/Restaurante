@@ -438,3 +438,56 @@ textarea,select:not([type=submit]) {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
     position: relative;
 }
+
+/* Aquí va ordenar */
+
+.list-order li {
+    padding: 1rem;
+    float: left;
+    width: 33.3%;
+}
+
+.each-dish {
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.each-dish img {
+    max-width: 450px;
+    max-height: 300px;
+}
+
+.each-dish:hover { 
+    transform: scale(1.1);
+}
+
+.each-dish-order {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #F5CA2B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.each-dish-order i {
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.each-dish-order:hover i {
+    padding-top: 1rem;
+    font-size: 3rem;
+}
+
+.each-dish-order i {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+}
