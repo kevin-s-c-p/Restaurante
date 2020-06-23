@@ -525,3 +525,15 @@ input[type='number']::-webkit-outer-spin-button {
     width: 60px;
     
 }
+
+/* ESTO ES CSS DEL MENU */
+
+.background-imagem {
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url(../img/menu_burger.jpg);
+    height: 82.5vh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
