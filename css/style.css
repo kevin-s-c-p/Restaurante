@@ -492,3 +492,36 @@ textarea,select:not([type=submit]) {
     padding-top: 1.5rem;
     font-size: 2rem;
 }
+
+
+.boton-mas-menos{
+    padding: 1rem;
+    display: flex;
+}
+
+.boton-mas-menos button{
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    background-color: #353535;
+    color: white;
+}
+
+.boton-mas-menos button:hover{
+    background-color: #F5CA2B;
+    color: #353535;
+    transition: all 0.3s ease;
+}
+
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    opacity: 0;
+}
+
+.boton-mas-menos input{
+    height: 40px;
+    width: 60px;
+    
+}
