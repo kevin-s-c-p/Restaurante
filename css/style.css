@@ -475,6 +475,7 @@ textarea,select:not([type=submit]) {
     margin: 0;
     background-color: rgba(0, 0, 0, 0.55);
     width: 100%;
+    height: 25%;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
@@ -495,7 +496,7 @@ textarea,select:not([type=submit]) {
 
 
 .boton-mas-menos{
-    padding: 1rem;
+    padding-top: 1rem;
     display: flex;
 }
 
@@ -523,7 +524,101 @@ input[type='number']::-webkit-outer-spin-button {
 .boton-mas-menos input{
     height: 40px;
     width: 60px;
-    
+}
+
+.titulo{
+    text-align: center;
+}
+
+#show-modal{
+    text-align: center;
+    background: #353535;
+    padding: 0.5rem 3rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 1em;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+#show-modal:hover{
+    background-color: #F5CA2B;
+    color: #353535;
+    transition: all 0.3s ease;
+}
+
+.modal{
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.55);
+    width: 210vh;
+    height: 100vh;
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+.modal .contenido{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -1000vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: #353535;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 999999;
+}
+
+.modal h3{
+    padding: 0.2em;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.modal article{
+    height: 300px;
+    background: white;
+}
+
+.cierre{
+    color: #e74c3c;
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.modal a:hover{
+    color: #c0392b;
+}
+
+.modal:target{
+    opacity: 1;
+    top: 0;
+}
+
+.modal .btn-close-modal{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999991;
+}
+
+.modal:target .contenido{
+    top: 50px;
+    transition: top 0.35s ease;
 }
 
 /* ESTO ES CSS DEL MENU */
